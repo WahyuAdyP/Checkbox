@@ -13,6 +13,7 @@
 		EDDA70B520EDA6C100893F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDA70B420EDA6C100893F78 /* Assets.xcassets */; };
 		EDDA70B820EDA6C100893F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDA70B620EDA6C100893F78 /* LaunchScreen.storyboard */; };
 		EDDA70C320EDA6C100893F78 /* CheckboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA70C220EDA6C100893F78 /* CheckboxUITests.swift */; };
+		EDDA70CE20EDA72E00893F78 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA70CD20EDA72E00893F78 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EDDA70BE20EDA6C100893F78 /* CheckboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDA70C220EDA6C100893F78 /* CheckboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxUITests.swift; sourceTree = "<group>"; };
 		EDDA70C420EDA6C100893F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDA70CD20EDA72E00893F78 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,11 @@
 		EDDA70AC20EDA6C000893F78 /* Checkbox */ = {
 			isa = PBXGroup;
 			children = (
-				EDDA70AD20EDA6C000893F78 /* AppDelegate.swift */,
-				EDDA70AF20EDA6C000893F78 /* ViewController.swift */,
-				EDDA70B120EDA6C100893F78 /* Main.storyboard */,
-				EDDA70B420EDA6C100893F78 /* Assets.xcassets */,
-				EDDA70B620EDA6C100893F78 /* LaunchScreen.storyboard */,
-				EDDA70B920EDA6C100893F78 /* Info.plist */,
+				EDDA70CF20EDA73C00893F78 /* Resource */,
+				EDDA70D320EDA78C00893F78 /* Utilities */,
+				EDDA70D020EDA74400893F78 /* Controller */,
+				EDDA70D120EDA74B00893F78 /* Storyboard */,
+				EDDA70D220EDA75300893F78 /* Supporting Files */,
 			);
 			path = Checkbox;
 			sourceTree = "<group>";
@@ -94,6 +95,48 @@
 				EDDA70C420EDA6C100893F78 /* Info.plist */,
 			);
 			path = CheckboxUITests;
+			sourceTree = "<group>";
+		};
+		EDDA70CF20EDA73C00893F78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDDA70B420EDA6C100893F78 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDDA70D020EDA74400893F78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDDA70AF20EDA6C000893F78 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDDA70D120EDA74B00893F78 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EDDA70B120EDA6C100893F78 /* Main.storyboard */,
+				EDDA70B620EDA6C100893F78 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EDDA70D220EDA75300893F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDDA70AD20EDA6C000893F78 /* AppDelegate.swift */,
+				EDDA70B920EDA6C100893F78 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDDA70D320EDA78C00893F78 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EDDA70CD20EDA72E00893F78 /* CheckBox.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +244,7 @@
 			files = (
 				EDDA70B020EDA6C000893F78 /* ViewController.swift in Sources */,
 				EDDA70AE20EDA6C000893F78 /* AppDelegate.swift in Sources */,
+				EDDA70CE20EDA72E00893F78 /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +399,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB73KN4XYE;
-				INFOPLIST_FILE = Checkbox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Checkbox/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crocodic.Checkbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crocodic.checkbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,12 +415,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JB73KN4XYE;
-				INFOPLIST_FILE = Checkbox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Checkbox/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crocodic.Checkbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crocodic.checkbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
