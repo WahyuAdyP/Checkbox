@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var checkbox: CheckBox!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Handle checkbox state change
+        checkbox.setOnTap { (checkBox, isChecked) in
+            print("Checkbox in checked state is \(isChecked)")
+        }
+        
+        // Change checkbox state
+        checkbox.setState(in: true)
     }
 
     override func didReceiveMemoryWarning() {

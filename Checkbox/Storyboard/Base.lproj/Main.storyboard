@@ -142,9 +142,9 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0I-qc-dht" customClass="CheckBox" customModule="Checkbox" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0I-qc-dht" customClass="CheckBox" customModule="Checkbox" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="380" width="295" height="30"/>
-                                        <state key="normal" title="Nasi goreng">
+                                        <state key="normal" title="Nasi goreng, dengan tambahan kecap asam manis dan telur dadar">
                                             <color key="titleColor" red="0.10980392160000001" green="0.55362218620000003" blue="0.74066191910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -152,6 +152,9 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="uncheckedImage" value="baseline_cloud_queue_black_24pt"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" red="0.93843194799999996" green="0.46374018260176125" blue="0.89010027192152785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLinesText">
+                                                <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
@@ -169,6 +172,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="checkbox" destination="nus-Zb-W2h" id="xzY-pl-qc8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
