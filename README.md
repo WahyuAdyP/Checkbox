@@ -1,8 +1,7 @@
 # Checkbox
 Checkbox subclass UIButton
 
-
-![](IMG_1419.PNG)
+<img src="https://github.com/WahyuAdyP/Checkbox/blob/master/IMG_1419.PNG" height="35%" width="35%">
 
 
 Check/ uncheck state with your own icon.
