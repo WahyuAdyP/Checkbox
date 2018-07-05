@@ -1,8 +1,9 @@
 # Checkbox
 Checkbox subclass UIButton
 
-![Image Preview]
-(https://github.com/WahyuAdyP/Checkbox/blob/master/IMG_1419.PNG)
+
+![](IMG_1419.PNG)
+
 
 Check/ uncheck state with your own icon.
 Drag & drop CheckBox.swift in your project, change UIButton class to CheckBox
